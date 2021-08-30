@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Keeper by IG</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="app.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <button id="history">Round History</button>
+    <div class="mod mod1">
+        <ol class="list-group list-group-numbered justify-content-evenly" id="scores">
+            <li class="list-group-item"></li>
+            <li class="list-group-item"></li>
+            <li class="list-group-item"></li>
+            <li class="list-group-item"></li>
+            <li class="list-group-item"></li>
+            <li class="list-group-item"></li>
+            <li class="list-group-item"></li>
+            <li class="list-group-item"></li>
+            <li class="list-group-item"></li>
+            <li class="list-group-item"></li>
+            <!-- <li class="list-group-item"><span class="p1">player1: <span class="score p1score">3</span></span> <span
+                class="p2">player2: <span class="score p2score">2</span></span></li> -->
+
+        </ol>
+    </div>
+    <div class="mod bg"></div>
+    <div class="container-fluid topcont">
+        <div class="container-fluid botcont">
+            <div class="toolTip">You can also use arrow keys or click the numbers</div>
+            <div class="toolTip2">Resets the score and stores it in the "Round History"</div>
+            <div class="number number1">0</div>
+            <div class="control1">
+                <div class="controlPanel">
+                    <div class="ctrlBtn1 reset">RESET</div>
+                    <div class="ctrlBtn1 multi"><span>1</span>x
+                    </div>
+                    <div class="ctrlBtn1 selector">
+                        <select name="rounds" class="rounds form-select">
+                            <option selected disabled>Winning score?</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="number number2">0</div>
+        </div>
+        <div class="container control2">
+            <div class="ctrlBtn min">-</div>
+            <div class="ctrlBtn plus">+</div>
+            <div class="ctrlBtn plus">+</div>
+            <div class="ctrlBtn min">-</div>
+        </div>
+        <!-- <div class="dropDown1">
+
+        </div> -->
+    </div>
+    <div class="fcont">
+       <span id="leti">I</span>.G
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
