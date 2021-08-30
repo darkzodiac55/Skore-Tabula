@@ -188,6 +188,7 @@ body {
     color: rgb(245, 230, 18);
     transition: all 0.5s ease;
     text-align: center;
+    cursor: pointer;
 }
 
 .fcont:hover {
