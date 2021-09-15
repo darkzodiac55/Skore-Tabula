@@ -1,5 +1,7 @@
 # Skore-Tabula
 
+High-visiblity, lightweight alternative to score keeping board.
+
 Jednoducha a vysokoviditelna nahrada za obycajnu tabulu/pero a papier pre potreby zapisu skore v stolnych hrach/ping pong atd.
 
 ## Ako pouzit 

@@ -27,7 +27,7 @@ function resetScore() {
     player2.score = 0
     resetColor()
     eventToggler('on')
-    this.classList.toggle('alertUsr')
+    this.classList.remove('alertUsr')
 }
 function resetColor() {
     selectP1.style.color = 'black'
@@ -71,6 +71,9 @@ const player1 = {
         ///// disable more score adding here
     },
     scoreDown() {
+        if (this.score <= 0) {
+            return
+        }
         this.score -= globalMult
         this.scoreCard.innerText = this.score
     },
@@ -148,7 +151,7 @@ function addBtnTooltipListener() {
 }
 
 function showTooltipForBtn(e) {
-    this.style.backgroundColor = 'red'
+    /* this.style.backgroundColor = 'red' */
     toolTip.classList.toggle('shown')
     setTimeout(() => {
         toolTip.classList.toggle('shown')

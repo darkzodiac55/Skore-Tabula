@@ -142,9 +142,8 @@ body {
 }
 
 .alertUsr {
-    transform: scale(1.1);
     background-color: red;
-    transition-duration: 3s;
+    animation: pulse 2s infinite;
 }
 
 .multi {
@@ -328,4 +327,27 @@ li span {
 
 .padLeft {
     padding-left: 45%;
+}
+
+
+#gh {
+    width: fit-content;
+    height: fit-content;
+    position: fixed;
+    bottom: 1%;
+    left: 1%;
+    transform: scale(1);
+	animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.90);
+    }
+    70% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0.90);
+    }
 }
