@@ -66,6 +66,7 @@ body {
     padding-right: 80px;
 }
 
+
 .dropDown1 {
     height: 80%;
     background-color: darkgreen;
@@ -98,7 +99,12 @@ body {
     font-size: 1.5rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
+}
+
+#readme p {
+    margin-top: 17px;
+    margin-bottom: 17px;
 }
 
 .xer {
