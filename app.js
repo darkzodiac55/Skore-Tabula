@@ -11,6 +11,7 @@ let roundSelect = document.querySelector('.rounds')
 let roundHistory = document.getElementById('history')
 let modals = document.querySelectorAll('.mod')
 let scoreList = document.getElementById('scores')
+let popup = document.querySelector('#readme')
 
 let scoreLimit
 let globalMult = 1
@@ -163,7 +164,7 @@ function showTooltipForBtn(e) {
     }
 }
 
-function showTooltip(tooltip,e) {
+function showTooltip(tooltip, e) {
 
     /* if (shown === true) {
         return
@@ -229,28 +230,32 @@ function displayHistory(e) {
 
 let index = 0
 function renderScore() {
-    
-    let score1 = resArr[resArr.length-1][0]
-    let score2 = resArr[resArr.length-1][1]
+
+    let score1 = resArr[resArr.length - 1][0]
+    let score2 = resArr[resArr.length - 1][1]
     if (score1 > score2) {
         color1 = 'winner'
         color2 = 'loser'
     } else if (score1 === score2) {
         color1 = 'winner'
-        color2  = 'winner'
+        color2 = 'winner'
     } else {
         color1 = 'loser'
-        color2  = 'winner'
+        color2 = 'winner'
     }
     scoreList.children[index].innerHTML = `<span class="p1">player1: <span class="score p1score ${color1}">${score1}</span></span> <span
     class="p2">player2: <span class="score p2score ${color2}">${score2}</span></span>`
     index++
 }
 
+popup.children[0].addEventListener('click', (e) => {
+    popup.classList.add('hidden')
+})
+
 addScoreListeners()
 addBtnTooltipListener()
 
-resetBtn.addEventListener('mouseenter', showTooltip2, {once:true})
+resetBtn.addEventListener('mouseenter', showTooltip2, { once: true })
 resetBtn.addEventListener('click', resetScore)
 multiBtn.addEventListener('click', multiplier)
 roundSelect.addEventListener('input', scoreLimitSetter)
